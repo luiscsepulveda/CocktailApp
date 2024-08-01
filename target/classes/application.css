@@ -1,0 +1,51 @@
+/* application.css */
+
+
+
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+}
+
+.image-view {
+    -fx-padding: 10;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.hbox {
+    -fx-alignment: center;
+}
+
+.vbox {
+    -fx-alignment: center;
+}
+
+.grid-pane {
+    -fx-alignment: center;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.button:hover{
+    -fx-cursor: hand;
+}
+
+.image-view:hover {
+    -fx-effect: dropshadow(gaussian, yellow, 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
