@@ -1,5 +1,7 @@
-/* application.css */
 
+
+/*Import font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Titan+One&family=Unbounded:wght@200..900&display=swap');
 
 
 .label {
@@ -48,4 +50,10 @@
 .image-view:hover {
     -fx-effect: dropshadow(gaussian, yellow, 10, 0.5, 0, 0);
     -fx-cursor: hand;
+}
+
+.title-label {
+    -fx-font-family: 'Titan One', cursive;
+    -fx-font-size: 26px;
+    -fx-text-fill: white;
 }
