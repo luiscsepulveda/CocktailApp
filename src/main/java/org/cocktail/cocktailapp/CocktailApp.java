@@ -42,6 +42,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
+// add font to the title
+import javafx.scene.text.Font;
 
 import java.io.IOException;
 import java.util.List;
@@ -76,10 +78,19 @@ public class CocktailApp extends Application {
         primaryStage.getIcons().add(new Image("apple-touch-icon.png"));
         primaryStage.setTitle("Cocktail Api - Assignment 2");
 
+
         //Title of the UI app
         Label titleLabel = new Label("Sunny Sip App");
-        titleLabel.setStyle("-fx-font-size: 24px; -fx-text-fill: white;");
+        //titleLabel.setStyle("-fx-font-size: 26px; -fx-text-fill: white;");
         titleLabel.setAlignment(Pos.CENTER);
+        //bring the style class to apply the font
+        titleLabel.getStyleClass().add("title-label");
+
+
+        //load font and set it to the title label "Summy sip app"
+        Font customFont = Font.loadFont(getClass().getResourceAsStream("org/cocktail/cocktailapp/font/TitanOne-Regular.ttf"), 26);
+        titleLabel.setFont(customFont);
+
         //textfield to search
         TextField searchField = new TextField();
         searchField.setPromptText("Search Cocktails");
